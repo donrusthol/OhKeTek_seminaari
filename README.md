@@ -1,4 +1,4 @@
-# Koneoppiminen, Neuroverkot ja Luonnollisen Kielen Käsittely
+# Koneoppiminen, Neuroverkot ja Luonnollisen Kielen Käsittely (NLP)
 
 ### Johdanto
 Koneoppiminen ja neuroverkot ovat olennainen osa tekoälyä. Ne mahdollistavat tietokoneiden oppimisen ja päätöksenteon datan perusteella. Lisäksi luonnollisen kielen käsittely (NLP) liittyy ihmisten ja tietokoneiden väliseen vuorovaikutukseen, erityisesti kielten ymmärtämiseen ja tuottamiseen.
