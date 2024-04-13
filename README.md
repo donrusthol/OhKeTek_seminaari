@@ -28,6 +28,9 @@ NLP:llä on merkittävä rooli tekoälyn sovelluksissa, kuten tekstiluokitteluss
 ## Yhteenveto
 Koneoppiminen, neuroverkot ja NLP ovat keskeisiä tekoälyn osa-alueita. Niitä voidaan hyödyntää monissa sovelluksissa, kuten kuvantunnistuksessa, puheentunnistuksessa ja luonnollisen kielen käsittelyssä. Markdown-muotoisen raportin avulla voimme syventyä näihin aiheisiin tarkemmin ja ymmärtää niiden merkitystä valmistavassa teollisuudessa ja muissa sovelluksissa.
 
+# Video
+Linkki esittelyvideoon:
+
 # Lähteet:
 1) What Is Machine Learning? Definition, Types, and Examples. https://www.coursera.org/articles/what-is-machine-learning.
 2) What is a Neural Network? | IBM. https://www.ibm.com/topics/neural-networks.
