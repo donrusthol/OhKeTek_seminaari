@@ -1,26 +1,34 @@
-# Tutkielma
+# Koneoppiminen, Neuroverkot ja Luonnollisen Kielen Käsittely
 
-## Koneoppiminen
+### Johdanto
+Koneoppiminen ja neuroverkot ovat olennainen osa tekoälyä. Ne mahdollistavat tietokoneiden oppimisen ja päätöksenteon datan perusteella. Lisäksi luonnollisen kielen käsittely (NLP) liittyy ihmisten ja tietokoneiden väliseen vuorovaikutukseen, erityisesti kielten ymmärtämiseen ja tuottamiseen.
+
+## Tutkielma
+
+### Koneoppiminen
 Koneoppiminen on tietojenkäsittelytieteen ala, joka keskittyy algoritmien kehittämiseen, jotka parantavat suorituskykyään kokemuksen perusteella. Koneoppiminen on osa tekoälyä ja se käyttää tilastollisia malleja ja algoritmeja tietojen analysointiin ja päätelmien tekemiseen. Koneoppimisen avulla tietokoneet voivat suorittaa tehtäviä, jotka olisivat aiemmin olleet mahdollisia vain ihmisille, kuten kuvien luokittelu, datan analysointi tai hintavaihteluiden ennustaminen.
 
-## Neuroverkot
+### Neuroverkot
 Neuroverkot ovat koneoppimisen alalaji, joka jäljittelee ihmisaivojen toimintaa. Ne koostuvat solmuista tai tekoälyneuroneista, jotka on järjestetty kerroksiin: syöttökerros, yksi tai useampi piilotettu kerros ja lähtökerros. Jokainen solmu on yhteydessä muihin, ja sillä on oma painoarvonsa ja kynnysarvonsa. Neuroverkot oppivat koulutusdatan avulla ja parantavat tarkkuuttaan ajan myötä. Ne ovat tehokkaita työkaluja tietojenkäsittelytieteessä ja tekoälyssä, mahdollistaen datan luokittelun ja klusteroinnin suurella nopeudella.
 
-## Luonnollisen kielen käsittely (NLP)
+### Luonnollisen kielen käsittely (NLP)
 Luonnollisen kielen käsittely (NLP) on tekoälyn haara, joka auttaa tietokoneita ymmärtämään, tulkitsemaan ja manipuloimaan ihmiskieltä. NLP yhdistää laskennallisen kielitieteen - ihmiskielen sääntöpohjaisen mallinnuksen - tilastollisiin ja koneoppimismalleihin, jotta tietokoneet ja digitaaliset laitteet voivat tunnistaa, ymmärtää ja tuottaa tekstiä ja puhetta
 
-## Sanavektorit
+### Sanavektorit
 Sanavektorit ovat tapa esittää sanoja vektoreina moniulotteisessa tilassa, jossa vektorien välinen etäisyys ja suunta heijastavat vastaavien sanojen samankaltaisuutta ja suhteita. Sanavektorit tekevät teknologioista, kuten puheentunnistuksesta ja konekäännöksestä, mahdollisia.
 
-# Raportti
+## Raportti
 
-## Koneoppimisen ja neuroverkkojen sovellukset
+### Koneoppimisen ja neuroverkkojen sovellukset
 Koneoppimista ja neuroverkkoja hyödynnetään monilla aloilla, mukaan lukien rahoitus, terveydenhuolto ja autoteollisuus. Ne ovat olennainen osa monia digitaalisia tuotteita ja palveluita, joita käytämme päivittäin. Esimerkkejä ovat ääniohjatut GPS-järjestelmät, digitaaliset avustajat, puheesta tekstiksi -diktaatio-ohjelmistot ja asiakaspalvelu-chatbotit.
 
-## NLP:n ja sanavektoreiden sovellukset
+### NLP:n ja sanavektoreiden sovellukset
 NLP:llä on merkittävä rooli tekoälyn sovelluksissa, kuten tekstiluokittelussa, sentimenttianalyysissä, konekäännöksissä ja muissa. Sanavektoreita käytetään laajasti NLP-tehtävissä, kuten tekstiluokittelussa, entiteettien tunnistamisessa ja konekäännöksissä. Ne mahdollistavat koneoppimisalgoritmien ymmärtämisen ja prosessoinnin semanttisten sanojen suhteista perinteisiin menetelmiin verrattuna monipuolisemmin.
 
-Lähteet:
+## Yhteenveto
+Koneoppiminen, neuroverkot ja NLP ovat keskeisiä tekoälyn osa-alueita. Niitä voidaan hyödyntää monissa sovelluksissa, kuten kuvantunnistuksessa, puheentunnistuksessa ja luonnollisen kielen käsittelyssä. Markdown-muotoisen raportin avulla voimme syventyä näihin aiheisiin tarkemmin ja ymmärtää niiden merkitystä valmistavassa teollisuudessa ja muissa sovelluksissa.
+
+# Lähteet:
 1) What Is Machine Learning? Definition, Types, and Examples. https://www.coursera.org/articles/what-is-machine-learning.
 2) What is a Neural Network? | IBM. https://www.ibm.com/topics/neural-networks.
 3) What Is Natural Language Processing? | IBM. https://www.ibm.com/topics/natural-language-processing.
