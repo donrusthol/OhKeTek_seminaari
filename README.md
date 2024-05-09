@@ -28,8 +28,19 @@ NLP:llä on merkittävä rooli tekoälyn sovelluksissa, kuten tekstiluokitteluss
 ## Yhteenveto
 Koneoppiminen, neuroverkot ja NLP ovat keskeisiä tekoälyn osa-alueita. Niitä voidaan hyödyntää monissa sovelluksissa, kuten kuvantunnistuksessa, puheentunnistuksessa ja luonnollisen kielen käsittelyssä. Markdown-muotoisen raportin avulla voimme syventyä näihin aiheisiin tarkemmin ja ymmärtää niiden merkitystä valmistavassa teollisuudessa ja muissa sovelluksissa.
 
-# Video
-Linkki esittelyvideoon:
+# Tekstintunnistus kuvasta ja videosta Pythonilla (Projektityö)
+Tämä Python-skripti on suunniteltu tunnistamaan ja tulostamaan tekstiä kuva- tai videotiedostosta käyttämällä optista merkintunnistusta (OCR - Optical Character Recognition) Tesseractin avulla. Skripti on jaettu useisiin toimintoihin, joista jokaisella on oma rooli:
+
+1. **preprocess_image(image)**: Tämä toiminto ottaa kuvan syötteeksi ja esikäsittelee sen parantaakseen OCR:n tarkkuutta. Esikäsittelyvaiheet sisältävät:
+  * Kuvan muuntaminen harmaasävyiseksi OpenCV:n cvtColor-toiminnolla. Tämä tehdään, koska OCR toimii paremmin harmaasävykuvissa.
+  * Gaussin sumennuksen lisääminen harmaasävykuvaan OpenCV:n GaussianBlur-toiminnolla. Tämä auttaa vähentämään kohinaa kuvassa.
+  * Otsun kynnysarvon soveltaminen OpenCV:n kynnysfunktiolla. Tämä menetelmä laskee automaattisesti parhaan kynnysarvon tekstin erottamiseksi taustasta, mikä auttaa parantamaan OCR:n tarkkuutta.
+2. **recognize_text_from_image(image)**: Tämä toiminto ottaa esikäsitellyn kuvan syötteeksi ja tunnistaa kuvan tekstin Tesseract OCR:n avulla. OpenCV-kuva (numpy array) muunnetaan ensin PIL-kuvaksi. Sitten pytesseract-moduulin **image_to_string**-funktiota käytetään tekstin tunnistamiseen ja palauttamiseen kuvasta.
+3. **recognize_text_from_file(file_path, skip_frames=1)**: Tämä toiminto ottaa polun kuva- tai videotiedostoon ja syötteenä valinnaisen **skip_frames**-parametrin. **Skip_frames**-parametria käytetään videotiedostojen käsittelyssä ohittamaan tietty määrä kehyksiä kunkin käsitellyn kehyksen välillä. Toiminto tarkistaa ensin tiedostotunnisteen määrittääkseen, onko se kuva- vai videotiedosto. Jos se on kuvatiedosto, kuva luetaan OpenCV:n **imread**-toiminnolla, esikäsitellään ja teksti tunnistetaan ja tulostetaan. Jos se on videotiedosto, video avataan OpenCV:n **VideoCapture**-toiminnolla, minkä jälkeen jokainen kehys (tai jokainen **skip_frames** -kehys) esikäsitellään ja teksti tunnistetaan ja tulostetaan. Jos tiedosto ei ole kuva eikä video tai jos tiedoston avaamisessa tapahtuu virhe, tulostetaan virheilmoitus.
+
+Skripti sisältää myös pääosan, joka suoritetaan, kun komentosarja ajetaan erillisenä ohjelmana. Tämä osio kutsuu tunnusta_teksti_tiedostosta-funktiota, jossa on kovakoodattu tiedostopolku tekstintunnistuskoodin testaamiseksi. Tiedostopolku voidaan korvata polkulla mihin tahansa kuva- tai videotiedostoon testausta varten.
+
+Linkki esittelyvideoon: [text](https://drive.google.com/file/d/1EkSwS5PYzWMEjQq1g27QtXLMSxoOEpku/view?usp=sharing)
 
 # Lähteet:
 1) What Is Machine Learning? Definition, Types, and Examples. https://www.coursera.org/articles/what-is-machine-learning.

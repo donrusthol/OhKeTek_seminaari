@@ -87,5 +87,5 @@ if __name__ == "__main__":
     
     # To use your own test photo or video, replace the file path with the path to your image or video file with the slashes as forward slashes ("/") or double backslashes ("\\")
     
-    file_path = "./testvid2.mp4"  
+    file_path = "./testpic.jpg"  
     recognize_text_from_file(file_path)
