@@ -1,38 +1,42 @@
-from PIL import Image
 import unittest
-import numpy as np # pip install numpy
+from unittest.mock import patch
 import textrecognizer
 
 class TestTextRecognizer(unittest.TestCase):
-    def test_recognize_text_from_image(self):
-        # Create a simple white image with PIL
-        img = Image.new('RGB', (60, 30), color = (73, 109, 137))
+    def test_image1(self):
+        with patch('builtins.print') as mocked_print:
+            textrecognizer.recognize_text_from_file('./testpic.jpg')
+            mocked_print.assert_called_with('SALON SEUDUN SANOMAT')
 
-        # Write some text on the image
-        d = ImageDraw.Draw(img)
-        d.text((10,10), "Hello", fill=(255, 255, 255))
+    def test_image2(self):
+        with patch('builtins.print') as mocked_print:
+            textrecognizer.recognize_text_from_file('./testpic2.jpg')
+            mocked_print.assert_called_with('helo')
 
-        # Convert the PIL image to a numpy array
-        img_array = np.array(img)
+    def test_image3(self):
+        with patch('builtins.print') as mocked_print:
+            textrecognizer.recognize_text_from_file('./testpic3.jpg')
+            mocked_print.assert_called_with('Surgery For My Legs Cause I Cant Stand You Hoes')
 
-        # Call the function with the numpy array
-        result = textrecognizer.recognize_text_from_image(img_array)
+    def test_image4(self):
+        with patch('builtins.print') as mocked_print:
+            textrecognizer.recognize_text_from_file('./testpic4.jpg')
+            mocked_print.assert_called_with('Waterbaby lookin ass.')
 
-        # Check that the result is the expected text
-        self.assertEqual(result, "Hello")
+    def test_video1(self):
+        with patch('builtins.print') as mocked_print:
+            textrecognizer.recognize_text_from_file('./testvid.mp4')
+            mocked_print.assert_called_with('Kulmia Groupin 15v juhlat')
 
-    def test_recognize_text_from_image_empty(self):
-        # Create an empty white image with PIL
-        img = Image.new('RGB', (60, 30), color = (73, 109, 137))
+    def test_video2(self):
+        with patch('builtins.print') as mocked_print:
+            textrecognizer.recognize_text_from_file('./testvid2.mp4')
+            mocked_print.assert_called_with('GRIME DAILY')
 
-        # Convert the PIL image to a numpy array
-        img_array = np.array(img)
-
-        # Call the function with the numpy array
-        result = textrecognizer.recognize_text_from_image(img_array)
-
-        # Check that the result is an empty string
-        self.assertEqual(result, "")
+    def test_video3(self):
+        with patch('builtins.print') as mocked_print:
+            textrecognizer.recognize_text_from_file('./testvid3.mp4')
+            mocked_print.assert_called_with('Kohta mennään!')
 
 if __name__ == '__main__':
     unittest.main()
