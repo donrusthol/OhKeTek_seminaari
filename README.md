@@ -40,7 +40,7 @@ Tämä Python-skripti on suunniteltu tunnistamaan ja tulostamaan tekstiä kuva- 
 
 Skripti sisältää myös pääosan, joka suoritetaan, kun komentosarja ajetaan erillisenä ohjelmana. Tämä osio kutsuu tunnusta_teksti_tiedostosta-funktiota, jossa on kovakoodattu tiedostopolku tekstintunnistuskoodin testaamiseksi. Tiedostopolku voidaan korvata polkulla mihin tahansa kuva- tai videotiedostoon testausta varten.
 
-Linkki esittelyvideoon: [https://drive.google.com/file/d/1EkSwS5PYzWMEjQq1g27QtXLMSxoOEpku/view?usp=sharing](https://drive.google.com/file/d/1EkSwS5PYzWMEjQq1g27QtXLMSxoOEpku/view?usp=sharing)
+Linkki esittelyvideoon: https://drive.google.com/file/d/1EkSwS5PYzWMEjQq1g27QtXLMSxoOEpku/view?usp=sharing
 
 # Lähteet:
 1) What Is Machine Learning? Definition, Types, and Examples. https://www.coursera.org/articles/what-is-machine-learning.
